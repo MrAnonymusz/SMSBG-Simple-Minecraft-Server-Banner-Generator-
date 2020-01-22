@@ -29,7 +29,7 @@ But you may configure these options in the `banner.php` file.*
 
 **First you need to add a add your font file to the `fonts` folder and rename it like this: `examplefont-regular.ttf` after this go to the `config.php` and add it to the `fonts` and the name you specify there should be just the font's name without the _-regular.ttf_ and you must make sure it's all lowercase _(The name specified in the config and the actual name of the font file must be all lowercase)_. And now you can change the font by simply changing the `font` variable in the request url for example: `banner?address=your_minecraft_server_ip&background=1&font=your_custom_font`.**
 
-### Request a presetted banner
+### How can you request a presetted banner?!
 
 * __You can request a custom banner specified in the `config.php` like this: `banner?preset=hypixel` *(This is the default banner preset in the `config.php` and you can use it as an example)*__
 * You can add a new preset in the `config.php` by following the example given in the file _(hypixel)_ situated in the **presets** array 
@@ -71,10 +71,10 @@ $config = [
 ##### Example Banner
 
 **Default Banner**
-![Default Banner](https://i.ibb.co/MkmYRKW/banner-example.jpg)
+* ![Default Banner](https://i.ibb.co/MkmYRKW/banner-example.jpg)
 
 **Default Presetted Banner**
-![Default Presetted Banner](https://i.ibb.co/PMRkskY/banner-preset.jpg)
+* ![Default Presetted Banner](https://i.ibb.co/PMRkskY/banner-preset.jpg)
 
 ### Nginx Config (Optional)
 
