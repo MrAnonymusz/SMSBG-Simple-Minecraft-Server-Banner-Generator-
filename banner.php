@@ -17,6 +17,7 @@ class bannerGenerator
   private $_color;
   private $_type;
   private $_key;
+  private $_file_name;
 
   /*
     >> This function generates the banner image
@@ -33,13 +34,22 @@ class bannerGenerator
     $this->_type = $_type;
     $this->_key = $_key;
 
-    if($config['enable_key'] == true)
+    if($config['enable_htaccess'] == true)
     {
-      $this->query = json_decode(file_get_contents($config['app_url'].'query?address='.$this->_address.'&type=ping&key='.$config['app_key']));
+      $this->_file_name = 'query';
     }
     else
     {
-      $this->query = json_decode(file_get_contents($config['app_url'].'query?address='.$this->_address.'&type=ping'));
+      $this->_file_name = 'query.php';
+    }
+
+    if($config['enable_key'] == true)
+    {
+      $this->query = json_decode(file_get_contents($config['app_url'].$this->_file_name.'?address='.$this->_address.'&type=ping&key='.$config['app_key']));
+    }
+    else
+    {
+      $this->query = json_decode(file_get_contents($config['app_url'].$this->_file_name.'?address='.$this->_address.'&type=ping'));
     }
 
     $this->banner_background = __DIR__.'/img/background/banner_'.$this->_background.'.jpg';
