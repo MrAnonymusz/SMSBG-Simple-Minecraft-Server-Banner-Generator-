@@ -5,6 +5,7 @@ $config = [
   'enable_key' => false,
   'query_api' => 'https://api.mcsrvstat.us/2/',
   'app_url' => 'http://localhost/banner/',
+  'enable_htaccess' => false,
   'fonts' => ['ubuntu', 'roboto', 'minecraftia'],
   'defaults' => [
     'font' => 'ubuntu',
