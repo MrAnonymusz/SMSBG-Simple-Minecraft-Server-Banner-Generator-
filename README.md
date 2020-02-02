@@ -5,6 +5,7 @@ But you may configure these options in the `banner.php` file.*
 
 ### Some additional information
 
+* By default pretty urls are disabled and you can make a simple request like this: __banner.php?address=localhost:25565__. You can enable pretty urls in the `config.php` by changing the `enable_htaccess` from __false__ to __true__.
 * For prettier urls you can make a request without include the file's extension _(Instead of __banner.php?address=localhost:25565__ you can simply just __banner?address=localhost:25565__)_.
 * This project also includes a server query using [mcsrvstat.us](https://mcsrvstat.us/) api.
 * If you enable the `enable_key` option in the config file you can restrict the usage of the banner generator but then you must need to pass the following value for the future request's: `&key=your_app_key`. You can find the `app_key` in the `config.php` file. If you want to use it it's recommended to change it frequently but the actual usage of it is to disable the momentary usage of the generator.
@@ -12,7 +13,7 @@ But you may configure these options in the `banner.php` file.*
 
 ### Installation
 
-**Just simply drag all the files included form the downloaded zip in to a folder and after the go to the `config.php` and change the `app_url` from `http://localhost/banner/` to the domain for the banner generator. After that rename the `htaccess.txt` to `.htaccess` and you are ready to go!**
+**Just simply drag all the files included form the downloaded zip in to a folder and after the go to the `config.php` and change the `app_url` from `http://localhost/banner/` to the domain for the banner generator. _And if you want prettier urls to work rename the `htaccess.txt` to `.htaccess` and you are ready to go!_**
 
 ### How can you make a request?!
 
@@ -44,6 +45,7 @@ $config = [
   'enable_key' => false,
   'query_api' => 'https://api.mcsrvstat.us/2/',
   'app_url' => 'http://localhost/banner/',
+  'enable_htaccess' => false,
   'fonts' => ['ubuntu', 'roboto', 'minecraftia'],
   'defaults' => [
     'font' => 'ubuntu',
