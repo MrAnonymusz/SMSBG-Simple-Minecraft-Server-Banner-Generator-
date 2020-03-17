@@ -75,10 +75,10 @@ $config = [
 ##### Example Banner
 
 **Default Banner**
-* ![Default Banner](https://i.ibb.co/MkmYRKW/banner-example.jpg)
+* ![Default Banner](https://i.ibb.co/QD8Gz43/banner-example.jpg)
 
 **Default Presetted Banner**
-* ![Default Presetted Banner](https://i.ibb.co/PMRkskY/banner-preset.jpg)
+* ![Default Presetted Banner](https://i.ibb.co/D8tV4fY/banner-preset.jpg)
 
 ### Nginx Config (Optional)
 
