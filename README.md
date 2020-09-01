@@ -36,8 +36,8 @@ But you may configure these options in the `banner.php` file.*
 
 ### How can you request a presetted banner?!
 
-* __You can request a custom banner specified in the `config.php` like this: `banner?preset=hypixel` *(This is the default banner preset in the `config.php` and you can use it as an example)*__
-* You can add a new preset in the `config.php` by following the example given in the file _(hypixel)_ situated in the **presets** array 
+* __You can request a custom banner specified in the `presets.json` like this: `banner?preset=hypixel` *(This is the default banner preset in the `presets.json` and you can use it as an example)*__
+* You can add a new preset in the `presets.json` or via the **new banner generator panel** by clicking on the **"Create Preset"** button.
 
 #### Default config
 
@@ -77,10 +77,10 @@ $config = [
 ##### Example Banner
 
 **Default Banner**
-* ![Default Banner](https://i.ibb.co/s3p9s3y/banner-example.jpg)
+<br/><br/><img src="https://i.ibb.co/s3p9s3y/banner-example.jpg" alt="Default Banner" />
 
 **Default Presetted Banner**
-* ![Default Presetted Banner](https://i.ibb.co/TwrDwVY/banner-preset.jpg)
+<br/><br/><img src="https://i.ibb.co/TwrDwVY/banner-preset.jpg" alt="Default Presetted Banner"/>
 
 ### Nginx Config (Optional)
 
