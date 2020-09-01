@@ -1,0 +1,20 @@
+// Color System
+$primary: #86c724;
+$dark: #313131;
+$mc-green: #34aa2f;
+
+$theme-colors: ();
+
+$theme-colors: map_merge(
+  (
+    "mc-green": $mc-green
+  ),
+  $theme-colors
+);
+
+// Fonts
+
+$font-family-main: "Source Sans Pro", sans-serif;
+$font-family-secondary: "Raleway", sans-serif;
+
+$font-family-sans-serif: $font-family-main;

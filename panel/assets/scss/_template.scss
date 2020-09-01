@@ -1,0 +1,55 @@
+/*
+  >> Body
+*/
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  >> Tooltips
+*/
+
+@each $color, $value in $theme-colors {
+  .bs-tooltip-#{$color} {
+    &.bs-tooltip-top {
+      .arrow {
+        &::before {
+          border-top-color: $value;
+        }
+      }
+    }
+
+    &.bs-tooltip-right {
+      .arrow {
+        &::before {
+          border-right-color: $value;
+        }
+      }
+    }
+
+    &.bs-tooltip-bottom {
+      .arrow {
+        &::before {
+          border-bottom-color: $value;
+        }
+      }
+    }
+
+    &.bs-tooltip-left {
+      .arrow {
+        &::before {
+          border-left-color: $value;
+        }
+      }
+    }
+
+    .tooltip-inner {
+      color: white;
+      background-color: $value;
+    }
+  }
+}

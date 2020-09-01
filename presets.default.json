@@ -1,0 +1,10 @@
+{
+  "hypixel": {
+    "address": "mc.hypixel.net",
+    "display_name": "",
+    "font": "minecraftia",
+    "color": "#e0b450",
+    "background": 5,
+    "type": 1
+  }
+}

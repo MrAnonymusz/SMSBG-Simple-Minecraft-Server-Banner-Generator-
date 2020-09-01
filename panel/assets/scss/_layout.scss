@@ -1,0 +1,188 @@
+/*
+  >> Selection
+*/
+
+::selection {
+  color: white;
+  background-color: $primary;
+}
+
+/*
+  >> Page Container
+*/
+
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  >> Body Wrapper
+*/
+
+.body-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  flex-grow: 1;
+  min-height: calc(100vh - 59.5px);
+}
+
+/*
+  >> Navigation
+*/
+
+.navbar {
+  .navbar-brand {
+    margin-left: 30px;
+
+    > .brand-logo {
+      width: 28px;
+      height: 28px;
+      margin: 0 15px 0 0;
+    }
+
+    > .text {
+      font-weight: bold;
+    }
+  }
+}
+
+/*
+  >> Footer
+*/
+
+.a-footer {
+  background-color: darken(white, 7.5%);
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  .box-right {
+    text-align: right;
+  }
+
+  .text {
+    cursor: default;
+    margin: 0;
+  }
+}
+
+/*
+  >> Banner List Container
+*/
+
+.banner-list-container {
+  margin: 30px 0 0 0;
+
+  > .title {
+    font-weight: bold;
+    cursor: default;
+    margin: 0 15px;
+  }
+
+  > .box-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > .list-item {
+      float: left;
+      width: 50%;
+      padding: 15px;
+
+      > .text {
+        font-weight: bold;
+        color: $primary;
+        display: inline-block;
+        cursor: default;
+        margin: 0 0 7.5px 0;
+      }
+
+      > .banner-img {
+        width: 100%;
+        border: 3px solid transparent;
+        border-radius: $border-radius;
+        transition: all 0.3s ease;
+
+        &:focus {
+          border-color: transparent;
+        }
+
+        &:hover {
+          border-color: rgba($primary, 0.5);
+        }
+
+        &.active {
+          border-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+/*
+  >> Title(s)
+*/
+
+.out-title {
+  font-weight: bold;
+  cursor: default;
+  margin: 0;
+}
+
+/*
+  >> Preset List
+*/
+
+.preset-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    > .title {
+      font-weight: bold;
+      color: $primary;
+      cursor: default;
+      margin: 0 0 10px 0;
+    }
+
+    > img {
+      display: inline-block;
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+/*
+  >> Navigation
+*/
+
+.navbar {
+  .nav-item {
+    margin: 0 15px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
